@@ -1,0 +1,414 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+}
+
+body {
+    background-color: #F7F8E8;
+}
+
+#header {
+    background-color: #9A5731;
+    width: 100%;
+    height: 65px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hambug_name {
+    font-family: 'Irish Grover', system-ui;
+    font-weight: 400;
+    font-size: 48px;
+    color: #03291C;
+
+    width: 178px;
+    height: 58px;
+}
+
+#header, #bug {
+    position: absolute;
+    width: 100%;
+}
+
+#bug1 {
+    content: url(./assets/erro\ 1.png);
+
+    width: 33px;
+    height: 33px;
+
+    margin-top: 54px;
+    transform: translate(-50%, 0);
+    margin-left: 50%;
+}
+
+#phrase {
+    content: url(./assets/phrase.png);
+
+    width: 858px;
+    height: 74.7px;
+
+    margin-top: 100px;
+    transform: translate(-50%, 0);
+    margin-left: 50%;
+}
+
+/* WAVES */
+
+.waves {
+    /* position: relative; */
+    width: 100%;
+    height: auto;
+}
+
+#wave_bread_1 {
+    width: 120%;
+    height: 379px;
+    margin-top: 340px; 
+
+    position: absolute;
+    z-index: 1;
+
+    animation: moveBread 3s ease-in-out infinite alternate;
+}
+
+#wave_yellow {
+    width: 120%;
+    margin-top: 327px;
+
+    position: absolute;
+    z-index: 2;
+
+    animation: moveLine 3s ease-in-out infinite alternate;
+}
+
+#wave_lettuce {
+    width: 120%;
+    margin-top: 328px;
+
+    position: absolute;
+    z-index: 3;
+
+    animation: moveLettuce 2s ease-in-out infinite alternate;
+
+}
+
+#tomato_1 {
+    width: auto;
+    height: auto;
+    margin-top: 405px; 
+    margin-left: 5%;
+
+    position: absolute;
+    z-index: 4;
+
+    animation: moveTomato1 1s ease-in-out infinite alternate;
+}
+
+#tomato_2 {
+    width: auto;
+    height: auto;
+    margin-top: 393px; 
+    margin-left: 45%;
+
+    position: absolute;
+    z-index: 4;
+
+    animation: moveTomato2 2s ease-in-out infinite alternate;
+}
+
+#tomato_3 {
+    width: auto;
+    height: auto;
+    margin-top: 400px; 
+    margin-left: 78%;
+
+    position: absolute;
+    z-index: 4;
+
+    animation: moveTomato1 1.5s ease-in-out infinite alternate;
+}
+
+#wave_cheese {
+    width: 120%;
+    margin-top: 498px;
+
+    position: absolute;
+    z-index: 5;
+
+    animation: moveCheese 1.5s ease-in-out infinite alternate;
+}
+
+#wave_bread_2 {
+    width: 120%;
+    margin-top: 563px; 
+
+    position: absolute;
+    z-index: 6;
+
+    animation: moveBread 3s ease-in-out infinite alternate;
+}
+
+#wave_white {
+    width: 120%;
+    margin-top: 560px; 
+
+    position: absolute;
+    z-index: 7;
+
+    animation: moveLine 3s ease-in-out infinite alternate;
+}
+
+
+#green {
+    width: 110%;
+    margin-top: 646px; 
+    transform: translateX(-20px);
+
+    position: absolute;
+    z-index: 8;
+}
+
+/* KEYFRAMES */
+
+@keyframes moveBread {
+    from {
+        transform: translateX(-50px);
+    }
+}
+
+@keyframes moveLine {
+    from {
+        transform: translateX(-100px);
+    }
+}
+
+@keyframes moveLettuce {
+    from {
+        transform: translateX(-200px);
+    }
+}
+
+@keyframes moveTomato1 {
+    from {
+        transform: translateY(30px);
+    }
+}
+
+@keyframes moveTomato2 {
+    from {
+        transform: translateY(20px);
+    }
+}
+
+@keyframes moveCheese {
+    from {
+        transform: translateX(-50px);
+    }
+}
+
+
+/* PRODUCTS */
+
+.products {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-gap: 50px;
+
+    /* display: flex; */
+    justify-content: center;
+
+    margin-top: 800px;
+    position: relative;
+    z-index: 9;
+}
+
+/* CLICK */
+
+.image_click {
+    width: 450px;
+    position: relative;
+}
+
+.botton_light {
+    width: 406px;
+    height: 99px;
+    border-radius: 59px;
+
+    position: absolute;
+    
+    top: 100%; 
+    left: 2.5%;
+    transform: translate(0, -50%);
+}
+
+.botton_light:hover {
+    box-shadow: 0 0 5px 5px #03291C;
+}
+
+.description {
+    margin-left: 50px;
+}
+
+.products_title {
+
+    font-family: 'Irish Grover', system-ui;
+    font-weight: 400;
+    font-size: 64px;
+    color: #03291C;
+
+    width: 444px;
+    /* height: 77px; */
+}
+
+.products_description {
+
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    color: #03291C;
+
+    width: 444px;
+    /* height: 200px; */
+    margin-top: 10px;
+}
+
+/* MORTE SUBITA */
+
+#morte_subita_desc {
+    display: none;
+
+    position: absolute;
+    margin-top: 190px;
+
+    transform: translate(-50%, 0);
+    left: 50%;
+    z-index: 10;
+}
+
+#morte_subita:hover {
+    border-radius: 50px;
+    border-style: double;
+    border-color: #BDD236;
+}
+
+/* MORTE LENTA */
+
+#morte_lenta_desc {
+    display: none;
+
+    position: absolute;
+    margin-top: 190px;
+
+    transform: translate(-50%, 0);
+    left: 50%;
+    z-index: 10;
+}
+
+#morte_lenta:hover {
+    border-radius: 50px;
+    border-style: double;
+    border-color: #BDD236;
+}
+
+/* MORTE RAPIDA */
+
+#morte_rapida_desc {
+    display: none;
+
+    position: absolute;
+    margin-top: 190px;
+
+    transform: translate(-50%, 0);
+    left: 50%;
+    z-index: 10;
+}
+
+#morte_rapida:hover {
+    border-radius: 50px;
+    border-style: double;
+    border-color: #BDD236;
+}
+
+/* ORDER */
+
+#order_botton {
+    width: 100%;
+    display: flex;
+    position: absolute;
+}
+
+.botton_dark {
+    width: 485px;
+    height: 118px;
+    border-radius: 59px;
+
+    position: relative;
+
+    margin-top: 1700px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.botton_dark:hover {
+    box-shadow: 0 0 5px 5px #BDD236;
+}
+
+.bug {
+    width: 99px;
+    height: 103px;
+
+    position: relative;
+
+    margin-top: 1760px;
+    left: -22%;
+    z-index: 2;
+}
+
+/* FINAL */
+
+#final {
+    background-color: #9A5731;
+    width: auto;
+    height: 450px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 450px;
+
+}
+
+#company_name {
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    color: #FFFFFF;
+    opacity: 0.4;
+
+    width: 130px;
+    height: 60px;
+
+}
+
+/* CLICK */
+
+.blur {
+    filter: blur(150px);
+    transition: filter 0.5s ease;
+}
+
+/* .image_changes {
+    width: 509px;
+    height: 637px;
+
+    left: 236px;
+    border: 0;
+} */
+
